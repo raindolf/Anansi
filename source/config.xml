@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<image name='Anansi' displayname='Anansi' schemeversion='2.4'>
+  <description type='system'>
+    <author>Oasis WebSoft</author>
+    <contact>raindolf@oasiswebsoft.com</contact>
+    <specification>Base system + GNOME</specification>
+  </description>
+  <preferences>
+    <type flags='clic' checkprebuilt='true' hybrid='true' fsnocheck='true' boot='isoboot/suse-12.1'>iso</type>
+    <version>0.0.4</version>
+    <packagemanager>zypper</packagemanager>
+    <rpm-check-signatures>False</rpm-check-signatures>
+    <rpm-force>False</rpm-force>
+    <locale>en_US</locale>
+  </preferences>
+  <users group='root'>
+    <user name='root' shell='/bin/bash' pwd='$1$NQB05nWX$vvTzmZOqQkkt3qPgwuHZO0' home='/root'/>
+  </users>
+  <users group='users'>
+    <user name='Anansi' shell='/bin/bash' pwd='$1$LJFAdZBW$GbXbhn9aFs.3IxzFFWP7N/' home='/home/Anansi'/>
+    <user name='tux' shell='/bin/bash' pwd='$1$nwpFRtBz$4bSaSKQ3yj59V1PUd7kqU.' home='/home/tux'/>
+  </users>
+  <split>
+    <temporary>
+      <file name='/var'/>
+      <file name='/var/*'/>
+      <file name='/etc'/>
+      <file name='/etc/*'/>
+      <file name='/tmp'/>
+      <file name='/tmp/*'/>
+      <file name='/home'/>
+      <file name='/home/*'/>
+    </temporary>
+  </split>
+  <packages patternType='onlyRequired' type='image' patternPackageType='onlyRequired'>
+    <opensusePattern name='multimedia'/>
+    <opensusePattern name='devel_C_C++'/>
+    <opensusePattern name='devel_java'/>
+    <opensusePattern name='gnome'/>
+    <opensusePattern name='base'/>
+    <opensusePattern name='x11'/>
+    <package name='grub'/>
+    <package name='microcode_ctl'/>
+    <package name='MozillaFirefox'/>
+    <package name='apache2'/>
+    <package name='NetworkManager'/>
+    <package name='sudo'/>
+    <package name='libreoffice-calc'/>
+    <package name='evince'/>
+    <package name='libreoffice-math'/>
+    <package name='audacity'/>
+    <package name='dvd+rw-tools'/>
+    <package name='rhythmbox'/>
+    <package name='GraphicsMagick'/>
+    <package name='ImageMagick-extra'/>
+    <package name='dosbox'/>
+    <package name='wine-gecko'/>
+    <package name='circuslinux'/>
+    <package name='ksudoku'/>
+    <package name='gnome-games'/>
+    <package name='java-1_6_0-openjdk'/>
+    <package name='python'/>
+    <package name='wine-devel'/>
+    <package name='wine'/>
+    <package name='gconf2-branding-openSUSE'/>
+    <package name='gnome-session-fallback-session'/>
+    <package name='gnome-terminal'/>
+    <package name='gsettings-backend-dconf'/>
+    <package name='gtk2-branding-openSUSE'/>
+    <package name='gtk3-branding-openSUSE'/>
+    <package name='gvfs-backends'/>
+    <package name='hicolor-icon-theme-branding-openSUSE'/>
+    <package name='libgnomesu'/>
+    <package name='sax2-tools'/>
+    <package name='tomboy'/>
+    <package name='wallpaper-branding-openSUSE'/>
+    <package name='yast2-control-center-gnome'/>
+    <package name='yast2-gtk'/>
+    <package name='SuSEfirewall2'/>
+    <package name='bootsplash-branding-openSUSE'/>
+    <package name='iputils'/>
+    <package name='kernel-default'/>
+    <package name='less'/>
+    <package name='syslog-ng'/>
+    <package name='vim'/>
+    <package name='yast2'/>
+    <package name='yast2-firstboot'/>
+    <package name='yast2-ncurses'/>
+    <package name='zypper'/>
+    <package name='xorg-x11-server'/>
+    <package name='x11-tools'/>
+    <package name='dbus-1-x11'/>
+    <package name='xorg-x11-fonts'/>
+    <package name='xorg-x11-driver-video'/>
+    <package name='xorg-x11-driver-input'/>
+    <package name='ConsoleKit-x11'/>
+    <package name='icewm'/>
+    <package name='yast2-live-installer'/>
+    <package name='yast2-users'/>
+    <archive name='bootsplash.tar' bootinclude='true'/>
+    <archive name='gdm.tar'/>
+  </packages>
+  <packages type='bootstrap'>
+    <package name='filesystem'/>
+    <package name='glibc-locale'/>
+  </packages>
+  <repository type='rpm-md'>
+    <source path='http://download.opensuse.org/update/12.1/'/>
+  </repository>
+  <repository type='yast2'>
+    <source path='http://download.opensuse.org/distribution/12.1/repo/oss/'/>
+  </repository>
+</image>
