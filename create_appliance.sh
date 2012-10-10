@@ -1,12 +1,11 @@
 #!/bin/bash
 # ============================================================================
-# Script for creating appliances exported from SUSE Studio
-# (http://susestudio.com) on your local system.
+# Script for customizing Anansi OS
 #
 # Requires kiwi (http://opensuse.github.com/kiwi/).
 #
-# Author:  James Tan <jatan@suse.de>
-# Contact: feedback@susestudio.com
+# Author:  Raindolf Owusu <raindolf@oasiswebsoft.com>
+# Contact: www.oasiswebsoft.com 
 # ============================================================================
 
 # Recover backup files 
